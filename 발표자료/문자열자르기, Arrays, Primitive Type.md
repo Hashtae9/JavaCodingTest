@@ -1,7 +1,7 @@
 
 # 1. 문자열 자르기
 
----
+
 
 ### split()
 
@@ -116,7 +116,6 @@ String.substring(start,end) //start위치 부터 end전까지 문자열 발췌
 
 [11656번: 접미사 배열](https://www.acmicpc.net/problem/11656)
 
-![Untitled](MD%E1%84%8B%E1%85%AD%E1%86%BC%2020100749c9e04f96aadf32cda25f6adf/Untitled.png)
 
 ```java
 //11656 활용 예시
@@ -131,7 +130,7 @@ for(int i=0; i<line.length(); i++)suffix[i]=line.substring(i,i+1);
 
 [2]
 
----
+
 
 배열을 다루기 위한 다양한 메소드를 **java.util.Arrays 클래스**를 통해 이용가능
 
@@ -172,7 +171,7 @@ for(int i=0; i<line.length(); i++)suffix[i]=line.substring(i,i+1);
 
 # 3. primitive type 범위
 
----
+
 
 타입(data type) : 해당 데이터가 메모리에 어떻게 저장되고, 프로그램에서 어떻게 처리되어야 하는지를 명시적으로 알려주는 역할
 
@@ -190,6 +189,15 @@ primitive type : 자바에서 미리 정의하여 제공하는 여러 형태의 
 (백만자리+백만자리=1조자리) > int형의 최대 범위인 21억
 
 → 정수 오버플로우가 발생
+
+
+
+
+
+
+
+
+
 
 *reference*
 
