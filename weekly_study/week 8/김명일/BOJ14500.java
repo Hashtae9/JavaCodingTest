@@ -38,14 +38,14 @@ public class BOJ14500 {
                 visited[i][j] = true;
                 ArrayList<int[]> nodes = new ArrayList<>();
                 nodes.add(new int[]{i, j});
-                bfs(nodes);
+                dfs(nodes);
             }
         }
 
         System.out.println(result);
     }
 
-    static void bfs(ArrayList<int[]> nodes) {
+    static void dfs(ArrayList<int[]> nodes) {
         if (nodes.size() == 4) {
             int sum = 0;
             for (int[] node : nodes) {
@@ -69,7 +69,7 @@ public class BOJ14500 {
                     visited[nextRow][nextCol] = true;
                     int[] newNode = new int[]{nextRow, nextCol};
                     nodes.add(newNode);
-                    bfs(nodes);
+                    dfs(nodes);
                     nodes.remove(newNode);
                     visited[nextRow][nextCol] = false;
                 }
